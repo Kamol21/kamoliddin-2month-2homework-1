@@ -1,0 +1,206 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v11-latin-regular.woff2') format('woff2'),
+         url('../fonts/inter-v11-latin-regular.woff') format('woff');
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/inter-v11-latin-500.woff2') format('woff2'),
+         url('../fonts/inter-v11-latin-500.woff') format('woff');
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/inter-v11-latin-600.woff2') format('woff2'),
+         url('../fonts/inter-v11-latin-600.woff') format('woff');
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v11-latin-700.woff2') format('woff2'),
+         url('../fonts/inter-v11-latin-700.woff') format('woff');
+  }
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  /* font-size: 16px; */
+  font-weight: 400;
+  /* line-height: var(--main-line-height); */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+  flex-grow: 1;
+}
+.s1-bg-color {
+    width: 100%;
+    height: 100%;
+    background-color: #E7E7E7;
+}
+.hero-box {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-box__left-box {
+    position: relative;
+    display: block;
+    width: 570px;
+    height: 100%;
+    padding: 50px 150px 325px 60px;
+    background-image: url("../images/black-bg.jpg");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    content: "";
+}
+.left-box__first-word {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: 2px solid gray ;
+    border-radius: 20px;
+}
+.left-box__title {
+    margin: 65px 0 25px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+.left-box__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.left-box__button {
+    position: absolute;
+    bottom: -3%;
+    left: 0%;
+    padding: 28px 143px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #4DC490;
+    border-radius: 0px 0px 20px 20px;
+}
+.hero-box__right-box {
+    width: 570px;
+    padding: 60px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.right-box__title {
+    margin: 0 0 70px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.right-box__input {
+    width: 450px;
+    padding: 14px 0 14px 5px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+    border: 0;
+    border-bottom: 1px solid #555555;
+}
+.right-box__input:not(:placeholder-shown,:focus):invalid {
+    color: red;
+    border-bottom: 1px solid red;
+}
+.right-box__input:not(:placeholder-shown,:focus):invalid ~ strong{
+    color: red;
+}
+.right-box__invalids {
+    margin: 4px 0 0 0;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    color: transparent;
+}
+.right-box__button {
+    margin-top: 60px;
+    padding: 20px 149px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #655AF2;
+    border-radius: 10px;
+}
+.right-box__pandlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-box__under-btn-text {
+    font-size: 11px;
+    line-height: 15px;
+    color: #555555;
+}
+.right-box__last-link {
+    font-size: 11px;
+    line-height: 15px;
+    color: #F03535;
+}
